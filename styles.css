@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Protest+Revolution&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #0f1017;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  user-select: none;
+}
+
+video {
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border: none !important;
+  outline: none !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; /* adjust as needed */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: transparent;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #dbe7f4;
+}
+
+.logo {
+  height: auto;
+  margin-right: auto;
+}
+
+/* 
+.connect-button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: 1px solid #dbe7f4;
+  border-radius: 4px;
+  text-decoration: none;
+  background: #dbe7f4;
+  color: #0f1017;
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+*/
+
+.nav2 a:hover,
+.nav2 a:focus,
+.nav2 a:active {
+  background: #0f1017;
+  color: #dbe7f4;
+}
+
+.logo img {
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.nav a,
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  color: #dbe7f4;
+  text-decoration: none;
+}
+
+i {
+  width: 20px;
+  height: auto;
+}
+
+#audioControl {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #0f1017;
+  color: #dbe7f4;
+  border: none;
+  padding: 10px;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #dbe7f4;
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+#secret {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  #copyright {
+    font-size: 8px;
+    font-weight: 200;
+  }
+  #logo {
+    height: 4rem;
+    width: auto;
+  }
+  .logo img {
+    max-width: 96px;
+    max-height: 96px;
+  }
+}
+
+@media (max-width: 576px) {
+  #copyright {
+    font-size: 4px;
+    font-weight: 100;
+  }
+  #logo {
+    height: 3rem;
+    width: auto;
+  }
+  .logo img {
+    max-width: 64px;
+    max-height: 64px;
+  }
+}
