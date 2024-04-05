@@ -4,7 +4,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #0f1017;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -95,15 +95,23 @@ i {
   width: 20px;
   height: auto;
 }
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 
 #audioControl {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: #0f1017;
+  background-color: #000;
   color: #dbe7f4;
   border: none;
   padding: 10px;
+  border-radius: 25%;
 }
 
 #copyright {
